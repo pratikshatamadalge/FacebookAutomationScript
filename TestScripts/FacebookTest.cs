@@ -67,7 +67,7 @@ namespace FacebookLoginSel.TestScripts
             MailMessage mail = new MailMessage();
             SmtpClient SmtpServer = new SmtpClient("smtp.live.com");
             mail.From = new MailAddress("tcpratiksha@gmail.com");
-            mail.To.Add("tcpratiksha@gmail.com");
+            mail.To.Add("pratikshatamadalge@gmail.com");
             mail.Subject = "Test Mail....";
             mail.Body = "Mail With Attachment";
 
@@ -79,9 +79,7 @@ namespace FacebookLoginSel.TestScripts
             SmtpServer.Port = 587;
             SmtpServer.Credentials = new System.Net.NetworkCredential("tcpratiksha@gmail.com", "9890046630");
             SmtpServer.EnableSsl = true;
-
            // SmtpServer.Send(mail);
-
         }
 
         [Test, Order(1)]
@@ -92,13 +90,11 @@ namespace FacebookLoginSel.TestScripts
             ArticlePage article = new ArticlePage(driver);
             article.UploadThArticle();
             test.Log(Status.Info, "Articles Get Uploaded Successfully");            
-
-            //Assert.IsTrue(driver.FindElement(By.XPath("//img[@class='_s0 _4ooo _1x2_ _1ve7 _1gax img']")).Displayed);
             log.Info("Logout verification successfull");
-            
+
+            //Screenshot
             Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
             ss.SaveAsFile("F:\\VS\\FacebookLogin-CSharp\\ScreenShot\\one.png", ScreenshotImageFormat.Png);
         }         
     }
 }
-    

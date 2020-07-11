@@ -114,7 +114,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="TestScripts\Module1.cs" />
+    <Compile Include="TestScripts\FacebookTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />
