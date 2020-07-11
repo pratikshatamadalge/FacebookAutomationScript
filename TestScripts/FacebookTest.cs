@@ -33,7 +33,6 @@ namespace FacebookLoginSel.TestScripts
             extent = new ExtentReports();
             var htmlReporter = new ExtentHtmlReporter(@"F:\\VS\\FacebookLogin-CSharp\\ExtentReports\Module1.html");
             extent.AttachReporter(htmlReporter);
-
         }
 
         [OneTimeTearDown]
