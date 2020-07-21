@@ -31,7 +31,7 @@ namespace FacebookLoginSel.TestScripts
         public void ExtentStart()
         {            
             extent = new ExtentReports();
-            var htmlReporter = new ExtentHtmlReporter(@"F:\\VS\\FacebookLogin-CSharp\\ExtentReports\Module1.html");
+            var htmlReporter = new ExtentHtmlReporter(@"F:\\VS\\Facebook\\ExtentReports\\Module1.html");
             extent.AttachReporter(htmlReporter);
         }
 
@@ -61,7 +61,7 @@ namespace FacebookLoginSel.TestScripts
             log.Info("login verification successfull");
 
             Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
-            ss.SaveAsFile("F:\\VS\\FacebookLogin-CSharp\\ScreenShot\\one.png", ScreenshotImageFormat.Png);
+            ss.SaveAsFile("F:\\VS\\Facebook\\ScreenShot\\one.png", ScreenshotImageFormat.Png);
 
             MailMessage mail = new MailMessage();
             SmtpClient SmtpServer = new SmtpClient("smtp.live.com");
@@ -72,7 +72,7 @@ namespace FacebookLoginSel.TestScripts
 
 
             System.Net.Mail.Attachment attachment;
-            attachment = new System.Net.Mail.Attachment("F:\\VS\\FacebookLogin-CSharp\\ExtentReports\\index.html");
+            attachment = new System.Net.Mail.Attachment("F:\\VS\\Facebook\\ExtentReports\\index.html");
             mail.Attachments.Add(attachment);
 
             SmtpServer.Port = 587;
@@ -93,7 +93,7 @@ namespace FacebookLoginSel.TestScripts
 
             //Screenshot
             Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
-            ss.SaveAsFile("F:\\VS\\FacebookLogin-CSharp\\ScreenShot\\one.png", ScreenshotImageFormat.Png);
+            ss.SaveAsFile("F:\\VS\\FacebookLog\\ScreenShot\\one.png", ScreenshotImageFormat.Png);
         }         
     }
 }

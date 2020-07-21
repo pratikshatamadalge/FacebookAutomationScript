@@ -29,10 +29,5 @@ namespace FacebookLoginSel.AccessDataExel
                 return value;
             }
         }
-
-         //internal static object GetTestData(object testName)
-         //{
-         //    throw new NotImplementedException();
-         //}
     }
 }

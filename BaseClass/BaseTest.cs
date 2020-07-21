@@ -28,10 +28,10 @@ namespace FacebookLoginSel.BaseClass
             //using chrome options to disable unwanted notifications
             ChromeOptions opt = new ChromeOptions();
             opt.AddArguments("--disable-notifications");
-
+           
             //Launch the chrome browser
             driver = new ChromeDriver();
-
+            
             //Using implicitly wait 
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
 

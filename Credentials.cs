@@ -17,7 +17,7 @@ namespace FacebookLoginSel
 
          public Credentials()
          {
-            using (StreamReader r = new StreamReader("F:\\VS\\FacebookLogin-CSharp\\Cred.json"))
+            using (StreamReader r = new StreamReader("F:\\VS\\Facebook\\Cred.json"))
             {
                 json = r.ReadToEnd();
             }
